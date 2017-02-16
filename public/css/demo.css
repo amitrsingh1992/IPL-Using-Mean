@@ -1,0 +1,19 @@
+footer{
+	position: fixed;
+	bottom: 0;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+.carousel-inner > .item > img,
+ .carousel-inner > .item > a > img {
+     height: 195px;
+     margin: auto;
+    border-radius: 25px;
+ }
+ #mydiv img {
+     width: 100%;
+     height: 100%;
+ }

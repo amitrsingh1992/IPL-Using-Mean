@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <title></title>
-    <script src="" charset="utf-8"></script>
-    <script src="" charset="utf-8"></script>
-    <script src="" charset="utf-8"></script>
+    <meta charset="utf-8" />
+    <title>IPL Page</title>
+    <style >
+      body{
+        background: url(ipl images/captain.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+      }
+    </style>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/demo.css" />
 </head>
 
-<body ng-app="ipl">
-  <ui-view></ui-view>
-</body>
+<body ng-app="dashboard">
 
+
+
+<header></header>
+<navigation></navigation>
+<div class="body">
+<ui-view></ui-view>
+</div>
+<!-- <footer></footer> -->
+<script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+<script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js" charset="utf-8"></script>
+
+
+
+
+</body>
+<script src="app.js" charset="utf-8"></script>
+<script src="controllers/playerInfoCtrl.js" charset="utf-8"></script>
+<script src="controllers/teamCtrl.js" charset="utf-8"></script>
+<script src="services/myservice.js" charset="utf-8"></script>
+<script src="directives/header.js" charset="utf-8"></script>
+<script src="directives/navbar.js" charset="utf-8"></script>
+<script src="directives/footer.js" charset="utf-8"></script>
 </html>

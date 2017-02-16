@@ -1,0 +1,11 @@
+
+<div id="mydiv">
+
+  <div class="row">
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding-top:1%;" ng-repeat="list in team ">
+      <a ui-sref="playerInfo({teamName:list.teamName})">
+      <img ng-src = "ipl images/team_logo/{{list.teamImage}}" alt="{{list.teamName}}">
+    </a>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,5 @@
 var express = require('express');
 var path = require('path');
-var mongoose = require('mongoose');
 var morgan = require('morgan');
 var app = express();
 var user = require('./models/iplSchema'); 
