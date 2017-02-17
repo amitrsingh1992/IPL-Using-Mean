@@ -1,5 +1,38 @@
-<div class="">
-  <div class="" ng-repeat="list in data ">
-    <p>list.teamName</p>
-  </div>
+
+<div  ng-repeat="list in player ">
+    <div ng-style="{'background-image':'url(\'ipl images/team_background/{{list.teamName}}.png\') '}">
+
+      <!--
+      //team owner Image details
+      <div class="row">
+        <div class="col-lg-12">
+          
+        </div>
+      </div>
+      //team coach home ground and captain image with caption
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+        </div>
+      </div> -->
+
+
+        <div class="row">
+            <div class="" ng-repeat="lists in list.teamPlayer">
+                <div class=" col-lg-4 col-md-6  col-sm-12 col-xs-12">
+
+                        <img ng-src="ipl images/{{lists.playerImage}}" alt="{{lists.playerName}} Image">
+
+                        <h4><strong>Name:</strong>{{lists.playerName}}</h4>
+                        <h4><strong>Nationality:</strong>{{lists.playerNationality}}</h4>
+                        <h4><strong>Role:</strong>{{lists.playerRole}}</h4>
+                        <h4><strong>Bowling-Style:</strong>{{lists.playerBowlingStyle}}</h4>
+                        <h4><strong>Batting-Style:</strong>{{lists.playerBattingStyle}}</h4>
+                        <h4><strong>Date Of Birth:</strong>{{lists.playerDateOfBirth}}</h4>
+                      </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
