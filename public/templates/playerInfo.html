@@ -2,20 +2,30 @@
 <div  ng-repeat="list in player ">
     <div ng-style="{'background-image':'url(\'ipl images/team_background/{{list.teamName}}.png\') '}">
 
-      <!--
-      //team owner Image details
+      <center>
+      <!-- //team owner Image details -->
       <div class="row">
         <div class="col-lg-12">
-          
+          <img ng-src="ipl images/{{list.teamName.split(' ').join('')}}/{{list.teamOwner}}.jpg" style="margin:1%;border-radius:10px" width="280px" height="220px" alt="{{list.teamOwner}} Image">
+          <h4 style="color:yellow">Team Owner:-{{list.teamOwner}}</h4>
         </div>
       </div>
-      //team coach home ground and captain image with caption
+      <!-- //team coach home ground and captain image with caption -->
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <img ng-src="ipl images/{{list.teamName.split(' ').join('')}}/{{list.teamCoach}}.jpg" style="margin:1%;border-radius:10px" width="280px" height="220px" alt="{{list.teamCoach}} Image" width="228px" height="284px">
+          <h4 style="color:yellow">Team Coach:-{{list.teamCoach}}</h4>
         </div>
-      </div> -->
-
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <img ng-src="ipl images/{{list.teamName.split(' ').join('')}}/{{list.teamCaptain}}.jpg" style="margin:1%;border-radius:10px" width="280px" height="220px" alt="{{list.teamCaptain}} Image">
+          <h4 style="color:yellow">Team Captain:-{{list.teamCaptain}}</h4>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <img ng-src="ipl images/{{list.teamName.split(' ').join('')}}/{{list.teamHomeVenue}}.jpg" style="margin:1%;border-radius:10px" width="280px" height="220px" alt="{{list.teamHomeVenue}} Image">
+          <h4 style="color:yellow">Home Ground:-{{list.teamHomeVenue}}</h4>
+        </div>
+      </div>
+    </center>
 
         <div class="row">
             <div class="" ng-repeat="lists in list.teamPlayer">
@@ -23,12 +33,12 @@
 
                         <img ng-src="ipl images/{{lists.playerImage}}" alt="{{lists.playerName}} Image">
 
-                        <h4><strong>Name:</strong>{{lists.playerName}}</h4>
-                        <h4><strong>Nationality:</strong>{{lists.playerNationality}}</h4>
-                        <h4><strong>Role:</strong>{{lists.playerRole}}</h4>
-                        <h4><strong>Bowling-Style:</strong>{{lists.playerBowlingStyle}}</h4>
-                        <h4><strong>Batting-Style:</strong>{{lists.playerBattingStyle}}</h4>
-                        <h4><strong>Date Of Birth:</strong>{{lists.playerDateOfBirth}}</h4>
+                        <h4 style="color:yellow"><strong>Name:</strong>{{lists.playerName}}</h4>
+                        <h4 style="color:yellow"><strong>Nationality:</strong>{{lists.playerNationality}}</h4>
+                        <h4 style="color:yellow"><strong>Role:</strong>{{lists.playerRole}}</h4>
+                        <h4 style="color:yellow"><strong>Bowling-Style:</strong>{{lists.playerBowlingStyle}}</h4>
+                        <h4 style="color:yellow"><strong>Batting-Style:</strong>{{lists.playerBattingStyle}}</h4>
+                        <h4 style="color:yellow"><strong>Date Of Birth:</strong>{{lists.playerDateOfBirth}}</h4>
                       </div>
                       </div>
                 </div>
